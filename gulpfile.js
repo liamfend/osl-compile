@@ -19,7 +19,7 @@ console.log(tsConfig)
 // var tsProject = ts.createProject('');
 
 const tsDefaultReporter = ts.reporter.defaultReporter();
-
+const tsPorject = ts.createProject('tsconfig.json');
 const clean = (cb) => {
   return del([buildPath_ES, buildPath_LIB], cb);
 };
@@ -34,12 +34,11 @@ const scss = () => {
 
 const tsbuild = () => {
   return gulp
-    .src(tsCodePath)
+    .src(tsCodePath)//tsCodePath
     .pipe(
-      ts(tsConfig.compilerOptions)
+      tsPorject()
     )
     .pipe(gulp.dest(buildPath_ES))
-    
 };
  
 
