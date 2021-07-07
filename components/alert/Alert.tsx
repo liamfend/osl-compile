@@ -1,10 +1,10 @@
 import React, { ReactElement } from 'react'
 
-interface Props {
+export interface AlertProps {
     txt: string
 }
 
-export default function Alert({txt}: Props): ReactElement {
+export default function Alert({txt}: AlertProps): ReactElement {
     return (
         <div>
             {txt }
