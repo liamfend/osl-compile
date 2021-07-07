@@ -40,20 +40,7 @@ const tsbuild = () => {
     .pipe(gulp.dest(buildPath_ES))
     
 };
-
-
-// const tsbuild = () => {
-//   return gulp
-//     .src(tsCodePath)
-//     .pipe(
-//       babel({
-//         presets: ["@babel/preset-react","@babel/preset-typescript"],
-//       })
-//     )
-//     .pipe(gulp.dest(buildPath_ES))
-//     .pipe(gulp.dest(buildPath_LIB));
-// };
-
+ 
 
 const watch = function () {
   gulp.watch(sassPath, ["scss"]);
