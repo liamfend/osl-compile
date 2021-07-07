@@ -1,0 +1,9 @@
+button {
+    background-color: red;
+}
+
+.test{
+    &__box{
+        background-color: green;
+    }
+}
