@@ -7,7 +7,7 @@ interface Props {
 export default function Alert({txt}: Props): ReactElement {
     return (
         <div>
-            {txt}
+            {txt }
         </div>
     )
 }
