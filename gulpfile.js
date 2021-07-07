@@ -35,9 +35,8 @@ const tsbuild = () => {
   return gulp
     .src(tsCodePath)
     .pipe(
-      ts(tsConfig)
+      ts(tsConfig.compilerOptions)
     )
-    .on('error', () => { /* Ignore compiler errors */}) 
     .pipe(gulp.dest(buildPath_ES))
     
 };

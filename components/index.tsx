@@ -7,7 +7,7 @@ interface Props {
 export default function index({}: Props): ReactElement {
     return (
         <div>
-            <Alert msg={{a:'ss'}} />
+            <Alert txt= 'aa' />
         </div>
     )
 }

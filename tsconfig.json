@@ -2,14 +2,17 @@
   "compilerOptions": {
     "target": "ESNEXT",
     "module": "ESNEXT",
+     
     "allowJs": false,
-    "jsx": "preserve",
+    "jsx": "react",
     "declaration": true,
+    "resolveJsonModule": true,
     "rootDir": "./components",
     "strict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true,
+  
     "forceConsistentCasingInFileNames": true
   }
 }
